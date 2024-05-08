@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TravelClick</title>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<!--tttttLink JS e BOT tttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!--ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt-->	
+<style>
+@keyframes animar1{0%{transform: translateX(-100%);}100%{transform: translateX(0%);}}
+/*--ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt*/	
+nav span:first-of-type {position: absolute;top: 0;left: 0;width: 100%;height: 20px;background: linear-gradient(to right,#00A1FF,#00B2DE, #580FF6, #00B2DE,#00A1FF);
+animation: animar1 10s linear infinite;
+}
+button:hover{padding: 10px;}
+a:hover{padding: 10px;}	
+
+
+
+body{
+	background: url(imagens/illustration-5240508_1280.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	}
+
+	
+</style>
+</head>
+<body >
+<!--ttttNavbar tttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt--> 
+<nav class="navbar navbar-expand-lg" style="background-color: transparent;">
+<span></span>
+<!--tttttttttttReposividade do navbarttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt-->	
+<div class="container-fluid" style="color: #00B2DE; margin: 2%;" >
+<a class="navbar-brand" href="#" style="color: whitesmoke;"><strong>TravelClick</strong></a>   
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color: white;">
+<span class="navbar-toggler-icon"></span>
+</button>  
+<!--ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt-->	
+<div class="collapse navbar-collapse" id="navbarSupportedContent" style="color:antiquewhite;backdrop-filter: blur(20px); background-color: transparent">
+<!--topicos da navbar ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt-->	
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+	<li class="nav-item">
+		<a class="nav-link active" aria-current="page" href="homepage.php" style="color: #580FF6;">Home</a>
+	</li>       
+<li class="nav-item">
+<a class="nav-link active" aria-current="page" href="log.html" style="color: #580FF6;">Login</a>
+</li>
+<li class="nav-item">
+<a class="nav-link active" aria-current="page" href="Reserva.html" style="color: #580FF6;">Reservar</a>
+</li>
+<li class="nav-item">
+<a class="nav-link active" aria-current="page" href="reciboshtml.html" style="color: #580FF6;">Recibos</a>
+</li>
+<li class="nav-item">
+<a class="nav-link active" aria-current="page" href="lista.html" style="color: #580FF6;">Veículos</a>
+</li>
+<li class="nav-item">
+<a class="nav-link active" aria-current="page" href="perfil.html" style="color: #580FF6;">Perfil</a>
+</li>
+<li class="nav-item">
+<a class="nav-link active" aria-current="page" href="minhasViagens.html" style="color: #580FF6;">Minhas Viagens</a>
+</li>
+</ul>
+<!--ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt-->	     
+<form class="d-flex" role="search">
+<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);">
+<button class="btn btn-outline-success" type="submit" style="background-color: #580FF6;color: whitesmoke; border: none;box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);">Search</button>
+</form>
+<!--ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt-->	
+</div>
+</div>
+</nav>
+<!--ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt-->
+<div id="one" class="row" style="margin-left: 18%;">
+
+<!--ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt-->
+<div class="card"  id="card-fhx-4989" style="width: 18rem; margin: 2%;box-shadow: 0px 0px 10px 0px rgb(0, 0, 0); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;overflow: hidden;background: transparent;
+	border: 2px rgb(255, 255, 255, .2);
+	backdrop-filter: blur(20px);">		
+<img src="imagens/hatchback (6).png" style="height: 64px; width: 64px ; margin: 30%; margin-bottom: 0%;" class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title" style="margin: 25%; margin-bottom: 0%; margin-top: 0%; color: rgb(255, 255, 255);">FHX-4989</h5>   
+</div>
+<!--ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt-->
+<ul class="list-group list-group-flush"  id="cont-info-fhx-4989"  style="color: rgb(100, 105, 145);" >
+
+</ul>
+<!--ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt-->
+<div class="card-body">
+<div class="d-grid gap-2 d-md-block" style="margin: 10%; margin-bottom: 0%;">
+<button class="btn btn-outline-success" type="submit" style="background-color: #580FF6;color: whitesmoke; border: none;box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);"><img src="imagens/excluir (1).png" alt="Excluir" style="height: 30px; width: 30px; box-shadow: 0px 0px 10px 0px transparent; background-color: transparent;"></button>
+<button class="btn btn-outline-success" type="submit" style="background-color: #580FF6;color: whitesmoke; border: none;box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);"><img src="imagens/editar-mensagem.png" alt="Editar" style="height: 30px; width: 30px; box-shadow: 0px 0px 10px 0px transparent; background-color: transparent;"></button>
+<button class="btn btn-outline-success" type="submit" style="background-color: #580FF6;color: whitesmoke; border: none;box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);"><img src="imagens/usando-o-telefone.png" alt="Reservar" style="height: 30px; width: 30px; box-shadow: 0px 0px 10px 0px transparent; background-color: transparent;"></button>
+</div>
+</div>
+</div>
+<!--ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt-->
+<div class="card"  id="card-fpq-2132" style="width: 18rem; margin: 2%;box-shadow: 0px 0px 10px 0px rgb(0, 0, 0); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;overflow: hidden;background: transparent;
+	border: 2px rgb(255, 255, 255, .2);
+	backdrop-filter: blur(20px);">		
+<img src="imagens/hatchback (6).png" style="height: 64px; width: 64px ; margin: 30%; margin-bottom: 0%;" class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title" style="margin: 25%; margin-bottom: 0%; margin-top: 0%; color:  rgb(255, 255, 255);;">FPQ-2132</h5>   
+</div>
+<!--ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt-->
+<ul class="list-group list-group-flush" id="cont-info-fpq-2132" style="color: rgb(100, 105, 145);">
+</ul>
+<!--ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt-->
+<div class="card-body">
+<div class="d-grid gap-2 d-md-block" style="margin: 10%; margin-bottom: 0%;">
+<button class="btn btn-outline-success" type="submit" style="background-color: #580FF6;color: whitesmoke; border: none;box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);"><img src="imagens/excluir (1).png" alt="Excluir" style="height: 30px; width: 30px; box-shadow: 0px 0px 10px 0px transparent; background-color: transparent;"></button>
+<button class="btn btn-outline-success" type="submit" style="background-color: #580FF6;color: whitesmoke; border: none;box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);"><img src="imagens/editar-mensagem.png" alt="Editar" style="height: 30px; width: 30px; box-shadow: 0px 0px 10px 0px transparent; background-color: transparent;"></button>
+<button class="btn btn-outline-success" type="submit" style="background-color: #580FF6;color: whitesmoke; border: none;box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);"><img src="imagens/usando-o-telefone.png" alt="Reservar" style="height: 30px; width: 30px; box-shadow: 0px 0px 10px 0px transparent; background-color: transparent;"></button>
+</div>
+</div>
+</div>
+<!--ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt-->
+<div class="card" id="card-fps-1362" style="width: 18rem; margin: 2%;box-shadow: 0px 0px 10px 0px rgb(0, 0, 0); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;overflow: hidden;background: transparent;
+	border: 2px rgb(255, 255, 255, .2);
+	backdrop-filter: blur(20px);">		
+<img src="imagens/hatchback (6).png" style="height: 64px; width: 64px ; margin: 30%; margin-bottom: 0%;" class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title" style="margin: 25%; margin-bottom: 0%; margin-top: 0%; color: rgb(255, 255, 255);;">FPS-1362</h5>   
+</div>
+<!--ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt-->
+<ul class="list-group list-group-flush" id="cont-info-fps-1362" style="color: rgb(100, 105, 145);">
+
+</ul>
+<!--ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt-->
+<div class="card-body">
+<div class="d-grid gap-2 d-md-block" style="margin: 10%; margin-bottom: 0%;">
+<button class="btn btn-outline-success" type="submit" style="background-color: #580FF6;color: whitesmoke; border: none;box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);"><img src="imagens/excluir (1).png" alt="Excluir" style="height: 30px; width: 30px; box-shadow: 0px 0px 10px 0px transparent; background-color: transparent;"></button>
+<button class="btn btn-outline-success" type="submit" style="background-color: #580FF6;color: whitesmoke; border: none;box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);"><img src="imagens/editar-mensagem.png" alt="Editar" style="height: 30px; width: 30px; box-shadow: 0px 0px 10px 0px transparent; background-color: transparent;"></button>
+<button class="btn btn-outline-success" type="submit" style="background-color: #580FF6;color: whitesmoke; border: none;box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);"><img src="imagens/usando-o-telefone.png" alt="Reservar" style="height: 30px; width: 30px; box-shadow: 0px 0px 10px 0px transparent; background-color: transparent;"></button>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+<script>
+verStatusVeic("FHX4989","cont-info-fhx-4989");
+verStatusVeic("FPQ2132","cont-info-fpq-2132");
+verStatusVeic("FPS1362","cont-info-fps-1362");
+function verStatusVeic(placa,idDiv){
+
+
+            	$.ajax({
+			type: "POST",
+			data:{Placa:placa},
+			url: "VerStatusCarro.php",
+
+
+				success: function(response){
+				//console.log(document.getElementById("contviagens"));
+				document.getElementById(idDiv).innerHTML+=response;
+				console.log(response);
+				
+				
+				
+
+
+				}
+			});
+            
+           
+}
+function verReserva(obj){
+  console.log(obj.id);
+  
+}
+verReserva
+</script>
+
+
+
+
+
+
+
+
+
