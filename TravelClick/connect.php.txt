@@ -1,0 +1,16 @@
+
+<?php
+$servername = "seu_endereco_ip_do_mysql";
+$username = "seu_nome_de_usuario";
+$password = "sua_senha";
+$database = "seu_nome_de_banco_de_dados";
+
+// Criar conexão
+$conn = mysqli_connect($servername, $username, $password, $database);
+
+// Verificar conexão
+if (!$conn) {
+    die("Conexão falhou: " . mysqli_connect_error());
+}
+echo "Conexão bem-sucedida";
+?>

@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TravelClick</title>
+	<!--tttttLink JS e BOT tttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt-->
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="HtmlScript.js" ></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+	<!--ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt-->	
+	<style>
+/*-@keyframes animar1{0%{transform: translateX(-100%);}100%{transform: translateX(100%);}}
+/*--ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt*/	
+/* nav span:first-of-type {position: absolute;top: 0;left: 0;width: 100%;height: 20px;background: linear-gradient(to right,#00A1FF,#00B2DE, #580FF6, #00B2DE,#00A1FF);
+animation: animar1 10s linear infinite;
+}*/
+
+
+
+
+
+body{
+	background: url(imagens/illustration-5240508_1280.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+
+</style>
+</head>
+<body style="background-color: #00A1FF;">
+	<!--ttttNavbar tttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt--> 
+	<nav class="navbar navbar-expand-lg" style="background-color: transparent;">
+		<span></span>
+		<!--tttttttttttReposividade do navbarttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt-->	
+		<div class="container-fluid" style="color: #00B2DE; margin: 2%;" >
+			<a class="navbar-brand" href="#" style="color: whitesmoke;"><strong>TravelClick</strong></a>   
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color: white;">
+				<span class="navbar-toggler-icon"></span>
+			</button>  
+			<!--ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt-->	
+			<div class="collapse navbar-collapse" id="navbarSupportedContent" style="color:antiquewhite;backdrop-filter: blur(20px); background-color: transparent">
+				<!--topicos da navbar ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt-->	
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="homepage.php" style="color: #580FF6;">Home</a>
+					</li>       
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="log.html" style="color: #580FF6;">Login</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="Reserva.html" style="color: #580FF6;">Reservar</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="reciboshtml.html" style="color: #580FF6;">Recibos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="lista.html" style="color: #580FF6;">Veículos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="perfil.html" style="color: #580FF6;">Perfil</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="minhasViagens.html" style="color: #580FF6;">Minhas Viagens</a>
+					</li>
+				</ul>
+				<!--ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt-->	     
+				<form class="d-flex" role="search">
+					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);">
+					<button class="btn btn-outline-success" type="submit" style="background-color: #580FF6;color: whitesmoke; border: none;box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);">Search</button>
+				</form>
+				<!--ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt-->	
+			</div>
+		</div>
+	</nav>
+	<!--ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt-->
+	<div  id="contViagens" class="row" style="margin-left: 5%;">
+
+
+		<!-- onde sera carregada minhas viagens -->
+	</div>
+	<div class='msg-feedback' id='msg-feedback'></div>
+
+	<div id="container-info" class="container-info-reserv">
+
+
+	</div>
+
+</body>
+</html>
+<script  >
+	
+	var pos = 0;
+	var id;
+verReservas();
+	function CorfirmExcluirReserva(id_With_String,CardClicked) {
+		 //console.log(document.getElementsByName("card"+id));
+		console.log(id_With_String);
+		var id2 = id_With_String.substring(8);
+		console.log(id2);
+		console.log(CardClicked);
+		$.ajax({
+			type: "POST",
+			data: {"idReserva":id2},
+			url: "ExcluirViagem.php",
+
+
+			success: function(response){
+                //console.log(document.getElementById("contviagens"));
+                
+               
+                //console.log(response);
+                
+                document.getElementById("msg-feedback").innerHTML+=response;
+                pos = 100;
+                
+						 // Posição inicial
+    					 id = setInterval(frame, 2); // Define o intervalo de tempo para a animação
+    					
+    					CardClicked[0].innerHTML="";
+    					CardClicked[0].style.display="none";
+    				}
+    			});
+
+	}
+function	CorfirmCncelExcluirReserva(id_With_String,CardClicked){
+
+ 
+	CardClicked.innerHTML="";
+}
+// Adiciona um ouvinte de evento ao elemento HTML selecionado
+function ExcluirReserva(obj) {
+
+
+
+
+
+
+		console.log("tExcluirReservaest");
+		var id_With_String= obj;
+		console.log("id"+id_With_String);
+		var id = id_With_String.substring(6);
+		console.log(id);
+		
+		document.getElementById("card"+id).style.display="block";
+		document.getElementById("card"+id).innerHTML +='<div class="alert alert-info" role="alert">Ter certeza que deseja excluir ?</div><br><button type="button"  id="btnDelRe'+id+' " class="btn btn-success">Excluir</button><button type="button" class="btn btn-danger" id="btnCacel'+id+'" >Cancelar</button>';
+		console.log(card);
+		//card.innerHTML +='<div class="alert alert-info" role="alert">Ter certeza que deseja excluir ?</div><br><buttom onclick="'+CorfirmExcluirReserva(this)+' " id="'+id+'">ExcluirViagem</buttom><buttom id="exclBtn'+id+'">Cancelar</buttom>';
+			var btnsDelRes = document.querySelectorAll('[id^="btnDelRe"]');
+			var btnCancel = document.querySelectorAll('[id^="btnCacel"]');
+
+				console.log(btnsDelRes);
+				
+				btnsDelRes.forEach(function(btnDel_) {
+					//console.log(btnDel_.id);
+					btnDel_.addEventListener("click",function(){CorfirmExcluirReserva(btnDel_.id,document.getElementsByName("card"+id))} );
+				});
+				btnCancel.forEach(function(btnCan_) {
+					//console.log(btnDel_.id);
+					btnCan_.addEventListener("click",function(){CorfirmCncelExcluirReserva(btnCancel.id,document.getElementById("card"+id))} );
+				});
+
+		console.log( document.getElementById("card"+id));
+
+		//document.getElementsByName("card"+id)[0].style.display = "none";
+		
+				
+	}
+function frame() {
+        					if (pos == 80) { // Verifica se chegou à posição desejada
+            			clearInterval(id); // Para a animação
+            		} else {
+             // Incrementa a posição
+            document.getElementById("msg-feedback").style.left = pos + '%'; // Move o elemento para a direita
+           // document.getElementById("msg-feedback").style.opacity = (pos-i) + '%';
+           pos--;
+       }
+   }
+   function verReservas(){
+
+
+   	let contviagens = document.getElementById("contViagens");
+   	console.log(contviagens);
+   	$.ajax({
+   		type: "POST",
+
+   		url: "minhasviagens.php",
+
+
+   		success: function(response){
+				//console.log(document.getElementById("contviagens"));
+				document.getElementById("contViagens").innerHTML+=response;
+				//console.log(response);
+				
+				
+				var btnsDel = document.querySelectorAll('[id^="btnDel"]');
+
+				console.log(btnsDel);
+				
+				btnsDel.forEach(function(btnDel_) {
+					//console.log(btnDel_.id);
+					btnDel_.addEventListener("click",function(){ExcluirReserva(btnDel_.id)} );
+				});
+			}
+		});
+
+
+   }
+
+   function verReserva(obj){
+
+   	let vetJson=[];
+   	console.log(obj.id);
+   	document.getElementById("card"+obj.id).style.display="block";
+  //let contInfoReserv = document.getElementById("container-info");
+  let card = document.getElementById("card"+obj.id);
+  let cardshowid='CardShowPane'+obj.id;
+  //contInfoReserv.style.display="block";
+  card.innerHTML +='<div class="card" id="CardShowPane" ><div class="card-body"><h5 class="card-title" style="color:white;">Reserva #'+obj.id+'</h5><p class="card-text"><tr><td><text>hora saida</text></td><space></space> <td><input type="text" id="f_hi" class="field1Form" placeholder="hora saida"></td><br><td> <text>KM inicial </text></td><td><input type="text" id="KM_I" class="field1Form" ></td></tr><br><tr><td><text>hora chegada:</text></td><td><input type="text" id="f_hf" class="field1Form" placeholder="hora chegada"></td><td> <br><text>KM Final</text> </td><td><input type="text" id="KM_f" class="field1Form" ></td></tr></p><button  style="border-radius:40px;background:#000F2E" id='+obj.id+' onclick="cadastroApontamentoHora(this)" class="btn btn-primary">Emitir Horas</button><button  style="border-radius:40px;background:#000F2E" id='+obj.id+' onclick="fecharCard(this)" class="btn btn-primary">fechar</button></div><div id="contAlerts"></div></div>';
+  $.ajax({
+  	type: "POST",
+  	dataType : "json",
+  	data:{idReserva:obj.id},
+  	url: "VerHora.php",
+
+
+  	success: function(response){
+  		vetJson=response;
+  		document.getElementById("f_hi").value=vetJson[0];
+  		document.getElementById("f_hf").value=vetJson[1];
+  		document.getElementById("KM_I").value=vetJson[2];
+  		document.getElementById("KM_f").value=vetJson[3];
+  		console.log(response);
+
+
+
+
+
+  	}
+  });
+}
+
+function cadastroApontamentoHora(obj){
+	console.log("my id"+obj.id);
+	let HI=document.getElementById("f_hi").value;
+	let HF= document.getElementById("f_hf").value;
+	let km_I=document.getElementById("KM_I").value;
+	let km_f= document.getElementById("KM_f").value;
+	$.ajax({
+		type: "POST",
+
+		data:{idReserva:obj.id,h_i:HI,h_f:HF,KM_I:km_I,KM_F:km_f},
+		url: "CadastrarApontamento.php",
+
+
+		success: function(response){
+
+			document.getElementById("contAlerts").innerHTML=response;
+
+			console.log(response);
+
+
+
+
+
+		}
+	});
+}
+function fecharCard(obj){
+	document.getElementById("card"+obj.id).innerHTML="";
+	document.getElementById("card"+obj.id).style.display="none";
+}
+
+</script>
+<script src="HtmlScript.js"></script>
+
+<style>
+
+	#card{
+
+		width: 18rem; margin: 2%;box-shadow: 0px 0px 10px 0px rgb(0, 0, 0); font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;overflow: hidden;background: transparent;
+		border: 2px rgb(255, 255, 255, .2);
+		backdrop-filter: blur(20px);
+
+	}
+	.container-info-reserv{
+		position:absolute;
+		display:none;
+		top:40%;
+		left:40%;
+
+	}
+	.field1Form{
+		border-radius:20px;
+		background:   transparent;backdrop-filter: blur(40px);
+		box-shadow: 0px 0px 4px 0px rgb(255, 255, 255);
+		border:none;
+		color:white;
+		width:80%;
+	}
+
+	#CardShowPane{
+		width: 100%;border-radius:20px;background-color:#232529;	
+
+
+	}
+
+	text{
+		color:white;
+	}
+
+	space{
+		width:20px;}
+		.msg-feedback{
+			position: absolute;
+			
+			
+			width:20%;top:10%;
+		}
+		
+	</style>
+
+
